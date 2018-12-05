@@ -9,17 +9,24 @@ class Player{
     }
 }
 $(".lifeInc").click(function(){
-    var player=players[[this.id.slice(8,9)]-1]
-    if($("#"+this.id).hasclass("commanderDmg")){
-        incCdmg(player1,1);
+    var int=this.id.slice(6,7);
+    int=parseInt(int);
+    int=int-1;
+    var player=players[int]
+    if($("#"+player.id+" #"+this.id).hasClass("commanderDmg")){
+        incCdmg(player,1);
+        insertCdmg(player)
     }
     else{
         incLife(player,1);
     }
 })
 $(".lifeDic").click(function(){
-    var player=players[[this.id.slice(7,8)]-1]
-    if($("#"+this.id).hasclass("commanderDmg")){
+    var int=this.id.slice(6,7);
+    int=parseInt(int);
+    int=int-1;
+    var player=players[int]
+    if($("#"+player.id+" #"+this.id).hasClass("commanderDmg")){
     }
     else{
         incLife(player,-1)
@@ -30,11 +37,17 @@ $(".cDmg").click(function (){
     id=id.slice(0,7);
 })
 $(".cDmg").click(function(){
-    if($("#"+this.id).hasclass("commanderDmg")){
-        $("#"+this.id).toggleClass("commanderDmg")
+    if($("#"+this.id).hasClass("commanderDmg")){
+        var id=this.id.slice(0,7)+"LifeInc";
+        $("#"+id).toggleClass("commanderDmg")
+        var id=this.id.slice(0,7)+"LifeDic";
+        $("#"+id).toggleClass("commanderDmg")
     }
     else{
-        $("#"+this.id).toggleClass("commanderDmg") 
+        var id=this.id.slice(0,7)+"LifeInc";
+        $("#"+id).toggleClass("commanderDmg")
+        var id=this.id.slice(0,7)+"LifeDic";
+        $("#"+id).toggleClass("commanderDmg") 
     }
 })
 function getCdmg(player){
@@ -70,13 +83,14 @@ function insertCdmg(player){
     return true;
 }
 function incLife(player,int){
-    var life=player.life;
-    life=parseInt(life)+int;
-    $("#"+player.id+" life").html(life);
+    var life=player.life+int;
+    player.life=life
+    $("#"+player.id+" #life").html(life)
 }
 var players=[];
 window.onload= function(){
     players.push(new Player("player1","yuval"))
     players.push(new Player("player2","michal"))
-    players.push(new Player("player1","lotem"))
+    players.push(new Player("player3","lotem"))
 }
+//a
