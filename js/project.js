@@ -109,8 +109,9 @@ function incCdmg(player,int){
 }
 function insertCdmg(player){
     cDmg=getCdmg(player);
-    for(var x=0;x<3;x++){
-       var commanderDmg="cDmg"+x;
+    for(var x=1;x<4;x++){
+       var commanderDmg=this.id+"CdmgP"+x;
+       player1CdmgP2
        $("#"+player.id+" #"+[commanderDmg]).html(cDmg[x])
     }
     return true;
