@@ -14,11 +14,11 @@
         <div id="life">40</div>
         <div id="commanderDmgP1" class="popupWindow">
             <div id="player1CdmgP1">0</div>
-            <button id="cDmgP1P2" class="cDmgP1">michal</button>
+            <button id="cDmgP1P1" class="cDmgP1">michal</button>
             <div id="player1CdmgP2">0</div>
-            <button id="cDmgP1P3"class="cDmgP1">lotem</button>
+            <button id="cDmgP1P2"class="cDmgP1">lotem</button>
             <div id="player1CdmgP3">0</div>
-            <button id="cDmgP1P4"class="cDmgP1">arye</button>
+            <button id="cDmgP1P3"class="cDmgP1">arye</button>
             <button id="cDmgP1Inc" class="incCdmg">+</button>
             <button id="cDmgP1Dic" class="dicCdmg">-</button>
             <div></div>
@@ -31,9 +31,18 @@
     <div id="player2" class="player">
         <div id="name">michal</div>
         <div id="life">40</div>
-        <div id="cDmg2p1" calss="coDmg">0</div>
-        <div id="cDmg2P3" calss="coDmg">0</div>
-        <div id="cDmg2P4" calss="coDmg">0</div>
+        <div id="commanderDmgP2" class="popupWindow">
+            <div id="player2CdmgP1">0</div>
+            <button id="cDmgP2P1" class="cDmgP2">lotem</button>
+            <div id="player2CdmgP2">0</div>
+            <button id="cDmgP2P2"class="cDmgP2">arye</button>
+            <div id="player2CdmgP3">0</div>
+            <button id="cDmgP2P3"class="cDmgP2">yuval</button>
+            <button id="cDmgP2Inc" class="incCdmg">+</button>
+            <button id="cDmgP2Dic" class="dicCdmg">-</button>
+            <div></div>
+            <button id="closecDmgP2" class="closeButton">X</button>
+        </div>
         <button id="player2LifeInc" class="lifeInc">+</button>
         <button id="player2LifeDic" class="lifeDic">-</button>
         <button id="player2cDmg" class="cDmg">cDmg</button>
@@ -41,9 +50,18 @@
     <div id="player3" class="player">
             <div id="name">lotem</div>
             <div id="life">40</div>
-            <div id="cDmg3P1" calss="coDmg">0</div>
-            <div id="cDmg3P2" calss="coDmg">0</div>
-            <div id="cDmg3P4" calss="coDmg">0</div>
+            <div id="commanderDmgP3" class="popupWindow">
+                <div id="player3CdmgP1">0</div>
+                <button id="cDmgP3P1" class="cDmgP3">yuval</button>
+                <div id="player3CdmgP2">0</div>
+                <button id="cDmgP3P2"class="cDmgP3">michal</button>
+                <div id="player3CdmgP3">0</div>
+                <button id="cDmgP3P3"class="cDmgP3">arye</button>
+                <button id="cDmgP3Inc" class="incCdmg">+</button>
+                <button id="cDmgP3Dic" class="dicCdmg">-</button>
+                <div></div>
+                <button id="closecDmgP3" class="closeButton">X</button>
+            </div>
             <button id="player3LifeInc" class="lifeInc">+</button>
             <button id="player3LifeDic" class="lifeDic">-</button>
             <button id="player3cDmg" class="cDmg">cDmg</button>
@@ -51,33 +69,27 @@
     <div id="player4" class="player">
         <div id="name">arye</div>
         <div id="life">40</div>
-        <div id="cDmg4P1" calss="coDmg">0</div>
-        <div id="cDmg4P2" calss="coDmg">0</div>
-        <div id="cDmg4P3" calss="coDmg">0</div>
+        <div id="commanderDmgP4" class="popupWindow">
+            <div id="player4CdmgP1">0</div>
+            <button id="cDmgP4P1" class="cDmgP4">yuval</button>
+            <div id="player4CdmgP2">0</div>
+            <button id="cDmgP4P2"class="cDmgP4">michal</button>
+            <div id="player4CdmgP3">0</div>
+            <button id="cDmgP4P3"class="cDmgP4">lotem</button>
+            <button id="cDmgP4Inc" class="incCdmg">+</button>
+            <button id="cDmgP4Dic" class="dicCdmg">-</button>
+            <div></div>
+            <button id="closecDmgP4" class="closeButton">X</button>
+        </div>
         <button id="player4LifeInc" class="lifeInc">+</button>
         <button id="player4LifeDic" class="lifeDic">-</button>
         <button id="player4cDmg" class="cDmg">cDmg</button>
-    </div>
+</div>
     <div id="playerTurn"></div>
     <button id="turn">pass the turn</button>
-    <div id="commanderDmgP1" class="commanderDmgp1">
-        <div id="player1CdmgP2">0</div>
-        <button id="cDmgP1P2" class="cDmgP1">michal</button>
-        <div id="player1CdmgP3">0</div>
-        <button id="cDmgP1P3"class="cDmgP1">lotem</button>
-        <div id="player1CdmgP4">0</div>
-        <button id="cDmgP1P4"class="cDmgP1">arye</button>
-        <button id="cDmgP1Inc" class="incCdmg">+</button>
-        <button id="cDmgP1Dic" class="dicCdmg">-</button>
-        <div></div>
-        <button id="closecDmgP1" class="closeButton">X</button>
+    <div id="winner" class="popupWindow">
+        <div>The winner is:</div>
+        <div id="name"></div>
     </div>
-    <div id="commanderDmgP2" class="commanderDmgp2"></div>
-    <div id="commanderDmgP3" class="commanderDmgp3"></div>
-    <div id="commanderDmgP4" class="commanderDmgp4"></div>
-    <div id="player5" class="player"></div>
-    <div id="player6" class="player"></div>
-    <div id="player7" class="player"></div>
-    <div id="player8" class="player"></div>
     <script src=js/project.js></script>
 </body>
