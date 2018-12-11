@@ -199,6 +199,30 @@ $("#cDmgP4Inc").click(function(){
         loseTheGame(players[3])
     }
 })
+$(".btnWinner").click(function(){
+    var int =this.id.slice(1,2)
+    Winner(players[int-1].name)
+})
+$(".btnLose").click(function(){
+    var int =this.id.slice(1,2)
+    loseTheGame(players[int-1])
+})
+$("#playerMenuBtn").click(function(){
+    $("#PlayerMenu").show()
+})
+$("#closePlayerMenu").click(function(){
+    $("#PlayerMenu").hide()
+})
+$(".btnName").click(function(){
+    var name = prompt("Please enter your name", "XXXXX");
+    if(name!==null){
+       var id=this.id.slice(4,15)
+       $("#"+id+" #name").html(name)
+       $("#"+id+"Name").html(name)
+       int=id.slice(6,7)
+       players[int-1].name=name
+    }
+})
 function checkLifeEq0(player){
     if(player.life<=0){
         return true
@@ -283,9 +307,9 @@ function incLife(player,int){
 var players=[];
 var turn=0;
 window.onload= function(){
-    players.push(new Player("player1","yuval"))
-    players.push(new Player("player2","michal"))
-    players.push(new Player("player3","lotem"))
-    players.push(new Player("player4","arye"))
+    players.push(new Player("player1","player1"))
+    players.push(new Player("player2","player2"))
+    players.push(new Player("player3","player3"))
+    players.push(new Player("player4","player4"))
     $("#playerTurn").html(players[0].name)
  }

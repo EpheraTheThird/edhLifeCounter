@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="player1" class="player">
-        <div id="name">yuval</div>
+        <div id="name">player1</div>
         <div id="life">40</div>
         <div id="commanderDmgP1" class="popupWindow">
             <div id="player1CdmgP1">0</div>
@@ -27,9 +27,11 @@
         <button id="player1LifeInc" class="lifeInc">+</button>
         <button id="player1LifeDic" class="lifeDic">-</button>
         <button id="player1cDmg" class="cDmg">cDmg</button>
+        <button id="p1btnWinner" class="btnWinner">victory</button>
+        <button id="p1btnLose" class="btnLose">Lose</button>
     </div>
     <div id="player2" class="player">
-        <div id="name">michal</div>
+        <div id="name">player2</div>
         <div id="life">40</div>
         <div id="commanderDmgP2" class="popupWindow">
             <div id="player2CdmgP1">0</div>
@@ -46,9 +48,11 @@
         <button id="player2LifeInc" class="lifeInc">+</button>
         <button id="player2LifeDic" class="lifeDic">-</button>
         <button id="player2cDmg" class="cDmg">cDmg</button>
+        <button id="p2btnWinner" class="btnWinner">victory</button>
+        <button id="p2btnLose" class="btnLose">Lose</button>
     </div>
     <div id="player3" class="player">
-            <div id="name">lotem</div>
+            <div id="name">player3</div>
             <div id="life">40</div>
             <div id="commanderDmgP3" class="popupWindow">
                 <div id="player3CdmgP1">0</div>
@@ -65,9 +69,11 @@
             <button id="player3LifeInc" class="lifeInc">+</button>
             <button id="player3LifeDic" class="lifeDic">-</button>
             <button id="player3cDmg" class="cDmg">cDmg</button>
+            <button id="p3btnWinner" class="btnWinner">victory</button>
+            <button id="p3btnLose" class="btnLose">Lose</button>
     </div>
     <div id="player4" class="player">
-        <div id="name">arye</div>
+        <div id="name">player4</div>
         <div id="life">40</div>
         <div id="commanderDmgP4" class="popupWindow">
             <div id="player4CdmgP1">0</div>
@@ -84,12 +90,26 @@
         <button id="player4LifeInc" class="lifeInc">+</button>
         <button id="player4LifeDic" class="lifeDic">-</button>
         <button id="player4cDmg" class="cDmg">cDmg</button>
+        <button id="p4btnWinner" class="btnWinner">victory</button>
+        <button id="p4btnLose" class="btnLose">Lose</button>
 </div>
     <div id="playerTurn"></div>
     <button id="turn">pass the turn</button>
     <div id="winner" class="popupWindow">
         <div>The winner is:</div>
         <div id="name"></div>
+    </div>
+    <button id="playerMenuBtn">Player Menu</button>
+    <div id="PlayerMenu">
+        <button id="nameplayer1" class="btnName">Player1</button>
+        <div id="player1Name">player1</div>
+        <button id="nameplayer2" class="btnName">Player2</button>
+        <div id="player2Name">player2</div>
+        <button id="nameplayer3" class="btnName">Player3</button>
+        <div id="player3Name">player3</div>
+        <button id="nameplayer4" class="btnName">Player4</button>
+        <div id="player4Name">player4</div>
+        <button id="closePlayerMenu">X</button>
     </div>
     <script src=js/project.js></script>
 </body>
