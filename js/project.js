@@ -32,23 +32,56 @@ $(".lifeDic").click(function(){
         incLife(player,-1)
     }
 })
-$(".cDmg").click(function (){
-    id=this.id;
-    id=id.slice(0,7);
-})
 $(".cDmg").click(function(){
-    if($("#"+this.id).hasClass("commanderDmg")){
-        var id=this.id.slice(0,7)+"LifeInc";
-        $("#"+id).toggleClass("commanderDmg")
-        var id=this.id.slice(0,7)+"LifeDic";
-        $("#"+id).toggleClass("commanderDmg")
+    var id=this.id
+    id=id.slice(6,7)
+    id="commanderDmgP"+id
+    $("."+id).css("display", "block");
+})
+$("#turn").click(function (){
+    turn=turn+1;
+    if(turn===players.length){
+        turn=0
     }
-    else{
-        var id=this.id.slice(0,7)+"LifeInc";
-        $("#"+id).toggleClass("commanderDmg")
-        var id=this.id.slice(0,7)+"LifeDic";
-        $("#"+id).toggleClass("commanderDmg") 
+    $("#playerTurn").html(players[turn].name)
+})
+$(".cDmgP1").click(function (){
+    id=this.id.slice(6,8)
+    if($("#player1").hasClass("P2")){
+        if(id==="P2"){
+            $("#player1").toggleClass("P2"); 
+        }
     }
+    else if($("#player1").hasClass("P3")){
+        if(id==="P3"){
+            $("#player1").toggleClass("P3"); 
+        }
+    }
+    else if($("#player1").hasClass("P4")){
+        if(id==="P4"){
+            $("#player1").toggleClass("P4"); 
+        }
+    }
+    else {
+    $("#player1").toggleClass(id);
+    }
+})
+$("#cDmgP1Inc").click(function(){
+    if($("#player1").hasClass("P2")){
+        incCdmg(players[0],1)
+    }
+    else if($("#player1").hasClass("P3")){
+        incCdmg(players[0],2)
+    }
+    else if($("#player1").hasClass("P4")){
+        incCdmg(players[0],3)
+    }
+    insertCdmg(players[0])
+})
+$(".closeButton").click(function(){
+    var id=this.id.slice(9,11)
+    id="commanderDmg"+id
+    $("#"+id).css("display", "none");
 })
 function getCdmg(player){
     array=[];
@@ -88,9 +121,11 @@ function incLife(player,int){
     $("#"+player.id+" #life").html(life)
 }
 var players=[];
+var turn=0;
 window.onload= function(){
     players.push(new Player("player1","yuval"))
     players.push(new Player("player2","michal"))
     players.push(new Player("player3","lotem"))
-}
-//a
+    players.push(new Player("player4","arye"))
+    $("#playerTurn").html(players[0].name)
+ }

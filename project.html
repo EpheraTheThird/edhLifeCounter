@@ -5,16 +5,16 @@
             margin: 0;
         }
     </style>
+    <link rel="stylesheet" type="text/css" href="css/project.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <div id="player1" class="player">
         <div id="name">yuval</div>
         <div id="life">40</div>
-        <div id="cDmg0">0</div>
-        <div id="cDmg1">0</div>
-        <div id="cDmg2">0</div>
-        <div id="CDMGp1" class="CDMG"></div>
+        <div id="cDmg1P2" calss="cDmg">0</div>
+        <div id="cDmg1P3" calss="coDmg">0</div>
+        <div id="cDmg1P4" calss="coDmg">0</div>
         <button id="player1LifeInc" class="lifeInc">+</button>
         <button id="player1LifeDic" class="lifeDic">-</button>
         <button id="player1cDmg" class="cDmg">cDmg</button>
@@ -22,9 +22,9 @@
     <div id="player2" class="player">
         <div id="name">michal</div>
         <div id="life">40</div>
-        <div id="cDmg0">0</div>
-        <div id="cDmg1">0</div>
-        <div id="cDmg2">0</div>
+        <div id="cDmg2p1" calss="coDmg">0</div>
+        <div id="cDmg2P3" calss="coDmg">0</div>
+        <div id="cDmg2P4" calss="coDmg">0</div>
         <button id="player2LifeInc" class="lifeInc">+</button>
         <button id="player2LifeDic" class="lifeDic">-</button>
         <button id="player2cDmg" class="cDmg">cDmg</button>
@@ -32,15 +32,40 @@
     <div id="player3" class="player">
             <div id="name">lotem</div>
             <div id="life">40</div>
-            <div id="cDmg0">0</div>
-            <div id="cDmg1">0</div>
-            <div id="cDmg2">0</div>
+            <div id="cDmg3P1" calss="coDmg">0</div>
+            <div id="cDmg3P2" calss="coDmg">0</div>
+            <div id="cDmg3P4" calss="coDmg">0</div>
             <button id="player3LifeInc" class="lifeInc">+</button>
             <button id="player3LifeDic" class="lifeDic">-</button>
             <button id="player3cDmg" class="cDmg">cDmg</button>
     </div>
+    <div id="player4" class="player">
+        <div id="name">arye</div>
+        <div id="life">40</div>
+        <div id="cDmg4P1" calss="coDmg">0</div>
+        <div id="cDmg4P2" calss="coDmg">0</div>
+        <div id="cDmg4P3" calss="coDmg">0</div>
+        <button id="player4LifeInc" class="lifeInc">+</button>
+        <button id="player4LifeDic" class="lifeDic">-</button>
+        <button id="player4cDmg" class="cDmg">cDmg</button>
+    </div>
+    <div id="playerTurn"></div>
     <button id="turn">pass the turn</button>
-    <div id="player4" class="player"></div>
+    <div id="commanderDmgP1" class="commanderDmgp1">
+        <div id="player1CdmgP2">0</div>
+        <button id="cDmgP1P2" class="cDmgP1">michal</button>
+        <div id="player1CdmgP3">0</div>
+        <button id="cDmgP1P3"class="cDmgP1">lotem</button>
+        <div id="player1CdmgP4">0</div>
+        <button id="cDmgP1P4"class="cDmgP1">arye</button>
+        <button id="cDmgP1Inc" class="incCdmg">+</button>
+        <button id="cDmgP1Dic" class="dicCdmg">-</button>
+        <div></div>
+        <button id="closecDmgP1" class="closeButton">X</button>
+    </div>
+    <div id="commanderDmgP2" class="commanderDmgp2"></div>
+    <div id="commanderDmgP3" class="commanderDmgp3"></div>
+    <div id="commanderDmgP4" class="commanderDmgp4"></div>
     <div id="player5" class="player"></div>
     <div id="player6" class="player"></div>
     <div id="player7" class="player"></div>
