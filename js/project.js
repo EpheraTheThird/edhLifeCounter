@@ -260,6 +260,10 @@ class Player{
      $(".popupWindowShown").hide()
      $("#startMenuName").show()
  })
+ $("#closePlayerMenuName").click(function(){
+     var name=$("#player1 #name").html()
+     $("#playerTurn").html(name)
+ })
  function removePlayer3(){
      $(".player3").hide()
      players.pop()
