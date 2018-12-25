@@ -73,9 +73,13 @@
   }
   .player{
     display: inline-block;
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     padding: 5px;
     border: 1px solid blue; 
     background-color: yellow; 
+  }
+  .btns{
+    width: 50px;
+    height: 50px;
   }
