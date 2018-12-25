@@ -47,3 +47,27 @@
     font-size: 28px;
     font-weight: bold;
   }
+  #startMenuName{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 50; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: pink; /* Fallback color */
+    background-color: red; /* Black w/ opacity */
+  }
+  .popupWindowShown{
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 50; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: lightblue; /* Fallback color */
+    background-color: lightblue; /* Black w/ opacity */
+  }
